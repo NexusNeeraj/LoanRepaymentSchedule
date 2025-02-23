@@ -28,7 +28,8 @@ const LoanForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/calculate-loan-schedule",
+        // "http://localhost:5000/calculate-loan-schedule",
+        "https://loan-repayment-schedule-backend.vercel.app/calculate-loan-schedule",
         loanData
       );
       setSchedule(response.data.schedule);
